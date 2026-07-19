@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "Please cite the relevant publication listed in this repository when using or referring to this research."
+title: "Ontology-Based Adaptive Learning Research"
+type: dataset
+authors:
+  - family-names: "Khater"
+    given-names: "Eman"
+    email: "emansafwatm@gmail.com"
+    orcid: "https://orcid.org/0000-0003-2291-1166"
+repository-code: "https://github.com/emansafwatm/Ontology-Based-Adaptive-Learning-Research"
+url: "https://github.com/emansafwatm/Ontology-Based-Adaptive-Learning-Research"
+abstract: >
+  Historical research portfolio documenting ontology-based adaptive
+  assessment, semantic reasoning, Arabic financial-accounting knowledge
+  representation, and comparison with Item Response Theory.
+keywords:
+  - ontology
+  - knowledge representation
+  - semantic reasoning
+  - adaptive assessment
+  - adaptive learning
+  - financial accounting
+  - OWL
+  - RDF
+  - SPARQL
+  - educational technology
