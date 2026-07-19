@@ -1,169 +1,25 @@
-# Ontology-Based Adaptive Learning Research
+# Historical Source Archive
 
-This repository presents a historical research portfolio on ontology-based adaptive assessment, semantic reasoning, and knowledge representation in educational systems.
+This package contains selected surviving materials from the 2015 MSc research project on ontology-based adaptive assessment and financial-accounting knowledge representation.
 
-The work originated from research conducted during my MSc in Information Systems and resulted in three peer-reviewed publications addressing:
+## Status
 
-- Domain ontology construction
-- Semantic adaptive examination
-- Knowledge-based learner assessment
-- Comparison between ontology-based adaptation and Item Response Theory
-- Arabic financial-accounting knowledge representation
+The project is more than a decade old and is preserved as a historical research archive, not as a guaranteed modern, end-to-end reproducibility package. Some dependencies, database schemas, deployment instructions, and implementation details are unavailable or obsolete.
 
-## Research Background
+## Included
 
-Traditional computer-based examinations often select questions using fixed rules or statistical difficulty estimates. This research investigated whether semantic technologies could improve adaptive assessment by representing relationships among concepts, learning objectives, questions, and learner knowledge.
+- Sanitized ASP.NET/C# source code
+- Financial-accounting ontology files in OWL format
+- Historical simulation and analysis workbooks
+- Original research notes and an ontology visualization
+- A sample configuration without credentials
 
-The proposed approach used ontologies and semantic reasoning to select questions dynamically according to:
+## Sanitization
 
-- The learner’s demonstrated knowledge
-- Relationships among domain concepts
-- Question difficulty and prerequisite structure
-- Previous responses
-- The semantic coverage required by the assessment
+The archive excludes database files, user-account data, compiled binaries, NuGet caches, duplicate archives, temporary files, and original configuration files. Hard-coded credentials and machine-specific ontology paths were replaced with placeholders.
 
-The principal application domain was Arabic financial accounting.
+## Important limitation
 
-## Research Objectives
+The code has not been rebuilt or executed in a current environment. Public inclusion documents the historical implementation and does not imply current security, compatibility, or deployment readiness.
 
-The research addressed the following objectives:
-
-1. Develop a domain-specific ontology for financial accounting.
-2. Represent educational concepts, questions, learning relationships, and assessment rules semantically.
-3. Design an ontology-based adaptive examination engine.
-4. Use semantic reasoning to personalize question selection.
-5. Compare ontology-based adaptation with Item Response Theory.
-6. Assess the feasibility of semantic technologies in e-learning management systems.
-
-## Main Research Components
-
-### 1. Arabic Financial-Accounting Ontology
-
-A domain ontology was designed to represent financial-accounting concepts and their semantic relationships.
-
-The ontology supported:
-
-- Hierarchical concept organization
-- Prerequisite relationships
-- Topic and subtopic representation
-- Question-to-concept mapping
-- Semantic relationships among accounting concepts
-- Reasoning over learner knowledge and examination content
-
-### 2. Ontology-Based Adaptive Examination Engine
-
-The adaptive examination engine used semantic information to determine which question should be presented next.
-
-The system incorporated:
-
-- Learner-performance tracking
-- Semantic concept coverage
-- Rule-based question selection
-- Difficulty adaptation
-- Knowledge-gap identification
-- Dynamic examination progression
-
-### 3. Comparison with Item Response Theory
-
-The research compared ontology-based adaptive assessment with Item Response Theory.
-
-The comparison examined differences in:
-
-- Adaptation logic
-- Knowledge representation
-- Question selection
-- Interpretation of learner performance
-- Domain-awareness
-- Semantic explainability
-
-The ontology-based approach emphasized explicit domain knowledge and relationships, while Item Response Theory relied primarily on statistical modeling of learner ability and item characteristics.
-
-## Technologies
-
-The research used technologies including:
-
-- RDF
-- OWL
-- SPARQL
-- Protégé
-- Semantic reasoning
-- C#
-- ASP.NET
-- SQL
-- Ontology-driven application design
-
-## Publications
-
-### Arabic Ontology Model for Financial Accounting
-
-**Eman Khater, A. Hegazy, and M. Sakre**
-
-Published in the *International Conference on Soft Computing and Software Engineering, SCSE 2015*.
-
-[View publication](https://www.sciencedirect.com/science/article/pii/S1877050915026599)
-
-### Ontology-Based Adaptive Examination System in E-Learning Management Systems
-
-**Eman Khater, A. Hegazy, and M. E. Shehab**
-
-Published in the *IEEE Seventh International Conference on Intelligent Computing and Information Systems, ICICIS 2015*.
-
-[View publication](https://ieeexplore.ieee.org/document/7397228)
-
-### Comparing Ontology-Based and Item Response Theory in Computer Adaptive Test
-
-**Eman Khater, A. Hegazy, and M. E. Shehab**
-
-Published in the *IEEE Seventh International Conference on Intelligent Computing and Information Systems, ICICIS 2015*.
-
-[View publication](https://ieeexplore.ieee.org/document/7397220)
-
-## Relationship Among the Publications
-
-The three publications represent related parts of one broader research program:
-
-1. The financial-accounting ontology defined the domain knowledge.
-2. The adaptive examination system used that ontology for semantic question selection.
-3. The comparative study evaluated the ontology-based approach against Item Response Theory.
-
-Together, they demonstrate how knowledge representation and semantic reasoning can support adaptive educational systems.
-
-## Repository Scope
-
-This repository is intended as a historical research portfolio rather than a complete software reproduction package.
-
-It may include:
-
-- Research summaries
-- Architecture descriptions
-- Original diagrams
-- Ontology samples
-- Selected code fragments owned by the author
-- Citation metadata
-- Links to official publications
-
-Some original implementation materials may no longer be available or may depend on obsolete software environments.
-
-Any reconstructed material will be clearly identified as reconstructed rather than presented as an original archived artifact.
-
-## Planned Repository Structure
-
-```text
-.
-├── architecture/
-├── figures/
-├── ontology/
-├── references/
-├── docs/
-├── CITATION.cff
-└── README.md
-
-## Historical Project Status
-
-This repository documents research and implementation work originally developed in 2015 as part of an MSc research project on ontology-based adaptive assessment.
-
-Because the system was created more than a decade ago, some implementation details, dependencies, database structures, and deployment steps are no longer fully recoverable. The repository is therefore maintained as a historical research archive rather than as a guaranteed end-to-end reproducibility package.
-
-The preserved materials include source code, system components, simulation files, and documentation where available. Some files have been sanitized to remove credentials, local paths, generated binaries, database files, and other unsuitable artifacts.
-
-Any reconstructed explanations are based on the surviving source code and published papers and are identified accordingly.
+See the subdirectory README files for additional details.

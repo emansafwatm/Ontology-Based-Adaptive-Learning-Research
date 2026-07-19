@@ -1,0 +1,44 @@
+# Build artifacts
+bin/
+obj/
+Debug/
+Release/
+*.dll
+*.pdb
+*.exe
+*.cache
+*.resources
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Packages
+packages/
+*.nupkg
+
+# Databases and sensitive data
+*.mdf
+*.ldf
+*.bak
+*.accdb
+*.mdb
+App_Data/
+
+# Secrets and local configuration
+Web.config
+web.config
+appsettings.json
+!web.config.example
+!Web.config.example
+
+# Archives and temporary files
+*.zip
+*.rar
+*.7z
+*.tmp
+*.log
+~$*
