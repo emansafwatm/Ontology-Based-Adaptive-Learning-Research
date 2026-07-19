@@ -157,3 +157,13 @@ Any reconstructed material will be clearly identified as reconstructed rather th
 ├── docs/
 ├── CITATION.cff
 └── README.md
+
+## Historical Project Status
+
+This repository documents research and implementation work originally developed in 2015 as part of an MSc research project on ontology-based adaptive assessment.
+
+Because the system was created more than a decade ago, some implementation details, dependencies, database structures, and deployment steps are no longer fully recoverable. The repository is therefore maintained as a historical research archive rather than as a guaranteed end-to-end reproducibility package.
+
+The preserved materials include source code, system components, simulation files, and documentation where available. Some files have been sanitized to remove credentials, local paths, generated binaries, database files, and other unsuitable artifacts.
+
+Any reconstructed explanations are based on the surviving source code and published papers and are identified accordingly.
