@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<configuration>
+  <connectionStrings>
+    <add name="ApplicationServices"
+         connectionString="Data Source=YOUR_SERVER;Initial Catalog=ExaminationSystem;Integrated Security=True"
+         providerName="System.Data.SqlClient" />
+  </connectionStrings>
+  <!-- Historical ASP.NET configuration. Add provider and membership settings locally as needed. -->
+</configuration>

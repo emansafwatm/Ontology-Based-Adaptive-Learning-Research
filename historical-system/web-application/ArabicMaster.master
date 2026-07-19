@@ -1,0 +1,57 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ArabicMaster.master.cs" Inherits="ArabicMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html dir="rtl" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="Form2" runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="loginDisplay">
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                   <AnonymousTemplate>
+                          <asp:HyperLink ID="EnglishLink" runat="server" NavigateUrl="Default.aspx" >  English </asp:HyperLink>
+                       [ <a href="~/Account/Login.aspx" ID="HeadLoginStatus" runat="server">الدخول</a> ]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Welcome <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/> ]
+                         <br />
+                        <a href="~/Account/ChangePassword.aspx" ID="ChangePassword" runat="server">تغيير كلمة السر</a>
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+            <div class="Atitle">
+                <h1>
+                    نظام الامتحانات الالكتروني
+                </h1>
+            </div>
+           
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/ArabicDefault.aspx" Text="الرئيسية"/>
+                        <asp:MenuItem NavigateUrl="~/ArabicAbout.aspx" Text="التعريف بالنظام"/>
+                        <asp:MenuItem NavigateUrl="~/Students/ArabicQuestions.aspx" Text="الامتحانات"/>
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>
