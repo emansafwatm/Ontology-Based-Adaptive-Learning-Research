@@ -1,0 +1,1332 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting">
+    <Prefix name="" IRI="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="ace_lexicon" IRI="http://attempto.ifi.uzh.ch/ace_lexicon#"/>
+    <Declaration>
+        <Class IRI="#Accounts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Accrual"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Accrued"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Accrued_Expenses"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Accrued_Revenue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Advanced"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Assets"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Balance_Sheet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Collections"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Credit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Credit_Side"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Current_Assets"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Current_Liabilities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Debit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Debit_Side"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Done"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Earned_Revenue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Expenses"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Financial_Accounting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Financial_Statements"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Income_Statement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Liabilities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Long_Term_Assets"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Long_Term_Liabilities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Not_Happened"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Owners_Equity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Paid_Expenses"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Payment_Collection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Payments"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Prepaid_Expenses"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Revenues"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unearned_Revenue"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Balance_Nature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Collect"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Contains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsAccuerd"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsContainedBY"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsTypeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Payment"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:TV_pl"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:TV_sg"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:TV_vbg"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Accrual"/>
+        <ObjectUnionOf>
+            <Class IRI="#Accrued"/>
+            <Class IRI="#Advanced"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Accrued"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IsAccuerd"/>
+            <Class IRI="#Accrued"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Advanced"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IsAccuerd"/>
+            <Class IRI="#Advanced"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Balance_Sheet"/>
+        <ObjectUnionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#IsContainedBY"/>
+                <Class IRI="#Credit_Side"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#IsContainedBY"/>
+                <Class IRI="#Debit_Side"/>
+            </ObjectAllValuesFrom>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Collections"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IsTypeOf"/>
+            <Class IRI="#Collections"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Credit"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#Balance_Nature"/>
+            <Class IRI="#Credit"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Credit_Side"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IsContainedBY"/>
+            <Class IRI="#Credit_Side"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Debit"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#Balance_Nature"/>
+            <Class IRI="#Debit"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Debit_Side"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IsContainedBY"/>
+            <Class IRI="#Debit_Side"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Done"/>
+        <ObjectUnionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#Collect"/>
+                <Class IRI="#Done"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#Payment"/>
+                <Class IRI="#Done"/>
+            </ObjectAllValuesFrom>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Income_Statement"/>
+        <ObjectUnionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#IsTypeOf"/>
+                <Class IRI="#Collections"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#IsTypeOf"/>
+                <Class IRI="#Payments"/>
+            </ObjectAllValuesFrom>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Nature"/>
+        <ObjectUnionOf>
+            <Class IRI="#Credit"/>
+            <Class IRI="#Debit"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Not_Happened"/>
+        <ObjectUnionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#Collect"/>
+                <Class IRI="#Not_Happened"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#Payment"/>
+                <Class IRI="#Not_Happened"/>
+            </ObjectAllValuesFrom>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Payment_Collection"/>
+        <ObjectUnionOf>
+            <Class IRI="#Done"/>
+            <Class IRI="#Not_Happened"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Payments"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IsTypeOf"/>
+            <Class IRI="#Payments"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Accounts"/>
+        <Class IRI="#Financial_Accounting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Accrual"/>
+        <Class IRI="#Financial_Accounting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Accrued"/>
+        <Class IRI="#Accrual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Accrued_Expenses"/>
+        <Class IRI="#Expenses"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Accrued_Expenses"/>
+        <ObjectUnionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#Balance_Nature"/>
+                <Class IRI="#Credit"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#IsAccuerd"/>
+                <Class IRI="#Accrued"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#IsContainedBY"/>
+                <Class IRI="#Credit_Side"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#IsTypeOf"/>
+                <Class IRI="#Payments"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#Payment"/>
+                <Class IRI="#Not_Happened"/>
+            </ObjectAllValuesFrom>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Accrued_Expenses"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#Balance_Nature"/>
+            <Class IRI="#Credit"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Accrued_Expenses"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IsAccuerd"/>
+            <Class IRI="#Accrued"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Accrued_Expenses"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IsContainedBY"/>
+            <Class IRI="#Credit_Side"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Accrued_Expenses"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IsTypeOf"/>
+            <Class IRI="#Payments"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Accrued_Expenses"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#Payment"/>
+            <Class IRI="#Not_Happened"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Accrued_Revenue"/>
+        <Class IRI="#Revenues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Accrued_Revenue"/>
+        <ObjectUnionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#Balance_Nature"/>
+                <Class IRI="#Debit"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#Collect"/>
+                <Class IRI="#Not_Happened"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#IsAccuerd"/>
+                <Class IRI="#Accrued"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#IsContainedBY"/>
+                <Class IRI="#Debit_Side"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#IsTypeOf"/>
+                <Class IRI="#Collections"/>
+            </ObjectAllValuesFrom>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Accrued_Revenue"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#Balance_Nature"/>
+            <Class IRI="#Debit"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Accrued_Revenue"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#Collect"/>
+            <Class IRI="#Not_Happened"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Accrued_Revenue"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IsAccuerd"/>
+            <Class IRI="#Accrued"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Accrued_Revenue"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IsContainedBY"/>
+            <Class IRI="#Debit_Side"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Accrued_Revenue"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IsTypeOf"/>
+            <Class IRI="#Collections"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Advanced"/>
+        <Class IRI="#Accrual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Assets"/>
+        <Class IRI="#Accounts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Assets"/>
+        <ObjectUnionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#Balance_Nature"/>
+                <Class IRI="#Debit"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#IsContainedBY"/>
+                <Class IRI="#Debit_Side"/>
+            </ObjectAllValuesFrom>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Assets"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#Balance_Nature"/>
+            <Class IRI="#Debit"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Assets"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IsContainedBY"/>
+            <Class IRI="#Debit_Side"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Balance_Sheet"/>
+        <Class IRI="#Financial_Statements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Collections"/>
+        <Class IRI="#Income_Statement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Credit"/>
+        <Class IRI="#Nature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Credit_Side"/>
+        <Class IRI="#Balance_Sheet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Current_Assets"/>
+        <Class IRI="#Assets"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Current_Liabilities"/>
+        <Class IRI="#Liabilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Debit"/>
+        <Class IRI="#Nature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Debit_Side"/>
+        <Class IRI="#Balance_Sheet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Done"/>
+        <Class IRI="#Payment_Collection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Earned_Revenue"/>
+        <Class IRI="#Revenues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Earned_Revenue"/>
+        <ObjectUnionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#Balance_Nature"/>
+                <Class IRI="#Credit"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#Collect"/>
+                <Class IRI="#Done"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#IsAccuerd"/>
+                <Class IRI="#Accrued"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#IsTypeOf"/>
+                <Class IRI="#Collections"/>
+            </ObjectAllValuesFrom>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Earned_Revenue"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#Balance_Nature"/>
+            <Class IRI="#Credit"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Earned_Revenue"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#Collect"/>
+            <Class IRI="#Done"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Earned_Revenue"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IsAccuerd"/>
+            <Class IRI="#Accrued"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Earned_Revenue"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IsTypeOf"/>
+            <Class IRI="#Collections"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Expenses"/>
+        <Class IRI="#Accounts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Financial_Statements"/>
+        <Class IRI="#Financial_Accounting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Income_Statement"/>
+        <Class IRI="#Financial_Statements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Liabilities"/>
+        <Class IRI="#Accounts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Liabilities"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#Balance_Nature"/>
+            <Class IRI="#Debit"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Liabilities"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IsContainedBY"/>
+            <Class IRI="#Credit_Side"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Long_Term_Assets"/>
+        <Class IRI="#Assets"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Long_Term_Liabilities"/>
+        <Class IRI="#Liabilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nature"/>
+        <Class IRI="#Financial_Accounting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Not_Happened"/>
+        <Class IRI="#Payment_Collection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Owners_Equity"/>
+        <Class IRI="#Accounts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Owners_Equity"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IsContainedBY"/>
+            <Class IRI="#Credit_Side"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Paid_Expenses"/>
+        <Class IRI="#Expenses"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Paid_Expenses"/>
+        <ObjectUnionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#Balance_Nature"/>
+                <Class IRI="#Debit"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#IsAccuerd"/>
+                <Class IRI="#Accrued"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#IsTypeOf"/>
+                <Class IRI="#Payments"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#Payment"/>
+                <Class IRI="#Done"/>
+            </ObjectAllValuesFrom>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Paid_Expenses"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#Balance_Nature"/>
+            <Class IRI="#Debit"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Paid_Expenses"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IsAccuerd"/>
+            <Class IRI="#Accrued"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Paid_Expenses"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IsTypeOf"/>
+            <Class IRI="#Payments"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Paid_Expenses"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#Payment"/>
+            <Class IRI="#Done"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Payment_Collection"/>
+        <Class IRI="#Financial_Accounting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Payments"/>
+        <Class IRI="#Income_Statement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prepaid_Expenses"/>
+        <Class IRI="#Expenses"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prepaid_Expenses"/>
+        <ObjectUnionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#Balance_Nature"/>
+                <Class IRI="#Debit"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#Collect"/>
+                <Class IRI="#Done"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#IsAccuerd"/>
+                <Class IRI="#Advanced"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#IsContainedBY"/>
+                <Class IRI="#Debit_Side"/>
+            </ObjectAllValuesFrom>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prepaid_Expenses"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#Balance_Nature"/>
+            <Class IRI="#Debit"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prepaid_Expenses"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#Collect"/>
+            <Class IRI="#Done"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prepaid_Expenses"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IsAccuerd"/>
+            <Class IRI="#Advanced"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prepaid_Expenses"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IsContainedBY"/>
+            <Class IRI="#Debit_Side"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Revenues"/>
+        <Class IRI="#Accounts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unearned_Revenue"/>
+        <Class IRI="#Revenues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unearned_Revenue"/>
+        <ObjectUnionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#Balance_Nature"/>
+                <Class IRI="#Credit"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#Collect"/>
+                <Class IRI="#Done"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#IsAccuerd"/>
+                <Class IRI="#Advanced"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#IsContainedBY"/>
+                <Class IRI="#Credit_Side"/>
+            </ObjectAllValuesFrom>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unearned_Revenue"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#Balance_Nature"/>
+            <Class IRI="#Credit"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unearned_Revenue"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#Collect"/>
+            <Class IRI="#Done"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unearned_Revenue"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IsAccuerd"/>
+            <Class IRI="#Advanced"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unearned_Revenue"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IsContainedBY"/>
+            <Class IRI="#Credit_Side"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Accrued"/>
+        <Class IRI="#Advanced"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Accrued_Expenses"/>
+        <Class IRI="#Paid_Expenses"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Accrued_Expenses"/>
+        <Class IRI="#Prepaid_Expenses"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Accrued_Revenue"/>
+        <Class IRI="#Earned_Revenue"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Accrued_Revenue"/>
+        <Class IRI="#Unearned_Revenue"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Assets"/>
+        <Class IRI="#Expenses"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Assets"/>
+        <Class IRI="#Liabilities"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Assets"/>
+        <Class IRI="#Owners_Equity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Assets"/>
+        <Class IRI="#Revenues"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Collections"/>
+        <Class IRI="#Payments"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Credit"/>
+        <Class IRI="#Debit"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Credit_Side"/>
+        <Class IRI="#Debit_Side"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Current_Assets"/>
+        <Class IRI="#Long_Term_Assets"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Current_Liabilities"/>
+        <Class IRI="#Long_Term_Liabilities"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Done"/>
+        <Class IRI="#Not_Happened"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Earned_Revenue"/>
+        <Class IRI="#Unearned_Revenue"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Expenses"/>
+        <Class IRI="#Liabilities"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Expenses"/>
+        <Class IRI="#Owners_Equity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Expenses"/>
+        <Class IRI="#Revenues"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Liabilities"/>
+        <Class IRI="#Owners_Equity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Liabilities"/>
+        <Class IRI="#Revenues"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Owners_Equity"/>
+        <Class IRI="#Revenues"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Balance_Nature"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Collect"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Contains"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsAccuerd"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsContainedBY"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsTypeOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Payment"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Contains"/>
+        <ObjectProperty IRI="#IsContainedBY"/>
+    </InverseObjectProperties>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+        <IRI>#Accounts</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Accountses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+        <IRI>#Accounts</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Accounts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+        <IRI>#Accrual</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Accruals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+        <IRI>#Accrual</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Accrual</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+        <IRI>#Accrued</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Accrueds</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+        <IRI>#Accrued</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Accrued</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+        <IRI>#Accrued_Expenses</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AccruedExpenseses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+        <IRI>#Accrued_Expenses</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AccruedExpenses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+        <IRI>#Accrued_Revenue</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AccruedRevenues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+        <IRI>#Accrued_Revenue</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AccruedRevenue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+        <IRI>#Advanced</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Advanceds</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+        <IRI>#Advanced</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Advanced</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+        <IRI>#Assets</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Assetses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+        <IRI>#Assets</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Assets</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:TV_pl"/>
+        <IRI>#Balance_Nature</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BalanceNature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:TV_sg"/>
+        <IRI>#Balance_Nature</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BalanceNatures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:TV_vbg"/>
+        <IRI>#Balance_Nature</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BalanceNatured</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+        <IRI>#Balance_Sheet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BalanceSheets</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+        <IRI>#Balance_Sheet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BalanceSheet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:TV_pl"/>
+        <IRI>#Collect</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Collect</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:TV_sg"/>
+        <IRI>#Collect</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Collects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:TV_vbg"/>
+        <IRI>#Collect</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Collected</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+        <IRI>#Collections</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Collectionses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+        <IRI>#Collections</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Collections</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:TV_pl"/>
+        <IRI>#Contains</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Contains</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:TV_sg"/>
+        <IRI>#Contains</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Containses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:TV_vbg"/>
+        <IRI>#Contains</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Containsed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+        <IRI>#Credit</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Credits</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+        <IRI>#Credit</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Credit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+        <IRI>#Credit_Side</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CreditSides</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+        <IRI>#Credit_Side</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CreditSide</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+        <IRI>#Current_Assets</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CurrentAssetses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+        <IRI>#Current_Assets</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CurrentAssets</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+        <IRI>#Current_Liabilities</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CurrentLiabilitieses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+        <IRI>#Current_Liabilities</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CurrentLiabilities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+        <IRI>#Debit</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Debits</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+        <IRI>#Debit</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Debit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+        <IRI>#Debit_Side</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DebitSides</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+        <IRI>#Debit_Side</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DebitSide</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+        <IRI>#Done</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Dones</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+        <IRI>#Done</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Done</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+        <IRI>#Earned_Revenue</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EarnedRevenues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+        <IRI>#Earned_Revenue</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EarnedRevenue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+        <IRI>#Expenses</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Expenseses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+        <IRI>#Expenses</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Expenses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+        <IRI>#Financial_Statements</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FinancialStatementses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+        <IRI>#Financial_Statements</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FinancialStatements</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+        <IRI>#Income_Statement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IncomeStatements</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+        <IRI>#Income_Statement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IncomeStatement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:TV_pl"/>
+        <IRI>#IsAccuerd</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IsAccuerd</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:TV_sg"/>
+        <IRI>#IsAccuerd</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IsAccuerds</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:TV_vbg"/>
+        <IRI>#IsAccuerd</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IsAccuerded</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:TV_pl"/>
+        <IRI>#IsContainedBY</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IsContainedBY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:TV_sg"/>
+        <IRI>#IsContainedBY</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IsContainedBies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:TV_vbg"/>
+        <IRI>#IsContainedBY</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IsContainedBied</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:TV_pl"/>
+        <IRI>#IsTypeOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IsTypeOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:TV_sg"/>
+        <IRI>#IsTypeOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IsTypeOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:TV_vbg"/>
+        <IRI>#IsTypeOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IsTypeOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+        <IRI>#Liabilities</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Liabilitieses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+        <IRI>#Liabilities</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Liabilities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+        <IRI>#Long_Term_Assets</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LongTermAssetses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+        <IRI>#Long_Term_Assets</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LongTermAssets</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+        <IRI>#Long_Term_Liabilities</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LongTermLiabilitieses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+        <IRI>#Long_Term_Liabilities</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LongTermLiabilities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+        <IRI>#Nature</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Natures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+        <IRI>#Nature</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Nature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+        <IRI>#Not_Happened</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NotHappeneds</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+        <IRI>#Not_Happened</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NotHappened</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+        <IRI>#Owners_Equity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">OwnersEquities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+        <IRI>#Owners_Equity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">OwnersEquity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+        <IRI>#Paid_Expenses</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PaidExpenseses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+        <IRI>#Paid_Expenses</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PaidExpenses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:TV_pl"/>
+        <IRI>#Payment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Payment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:TV_sg"/>
+        <IRI>#Payment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Payments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:TV_vbg"/>
+        <IRI>#Payment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Paymented</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+        <IRI>#Payment_Collection</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PaymentCollections</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+        <IRI>#Payment_Collection</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PaymentCollection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+        <IRI>#Payments</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Paymentses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+        <IRI>#Payments</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Payments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+        <IRI>#Prepaid_Expenses</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PrepaidExpenseses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+        <IRI>#Prepaid_Expenses</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PrepaidExpenses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+        <IRI>#Revenues</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Revenueses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+        <IRI>#Revenues</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Revenues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+        <IRI>#Unearned_Revenue</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UnearnedRevenues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+        <IRI>#Unearned_Revenue</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UnearnedRevenue</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

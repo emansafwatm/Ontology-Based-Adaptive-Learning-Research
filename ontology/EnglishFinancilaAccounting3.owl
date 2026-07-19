@@ -1,0 +1,1015 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY ace_lexicon "http://attempto.ifi.uzh.ch/ace_lexicon#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#"
+     xml:base="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl -->
+
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;CN_pl"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg -->
+
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;CN_sg"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl -->
+
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;TV_pl"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg -->
+
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;TV_sg"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg -->
+
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;TV_vbg"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Balance_Nature -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Balance_Nature">
+        <ace_lexicon:TV_sg>BalanceNatures</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>BalanceNature</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>BalanceNatured</ace_lexicon:TV_vbg>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Collect -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Collect">
+        <ace_lexicon:TV_pl>Collect</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>Collected</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>Collects</ace_lexicon:TV_sg>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Contains">
+        <ace_lexicon:TV_sg>Containses</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>Contains</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>Containsed</ace_lexicon:TV_vbg>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsAccuerd -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsAccuerd">
+        <ace_lexicon:TV_sg>IsAccuerds</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>IsAccuerd</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>IsAccuerded</ace_lexicon:TV_vbg>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsContainedBY -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsContainedBY">
+        <ace_lexicon:TV_sg>IsContainedBies</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>IsContainedBied</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>IsContainedBY</ace_lexicon:TV_pl>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Contains"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsTypeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsTypeOf">
+        <ace_lexicon:TV_pl>IsTypeOf</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>IsTypeOfs</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>IsTypeOfed</ace_lexicon:TV_vbg>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Payment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Payment">
+        <ace_lexicon:TV_vbg>Paymented</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>Payment</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>Payments</ace_lexicon:TV_sg>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Accounts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Accounts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Financial_Accounting"/>
+        <ace_lexicon:CN_pl>Accountses</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Accounts</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Accrual -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Accrual">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Accrued"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Advanced"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Financial_Accounting"/>
+        <ace_lexicon:CN_pl>Accruals</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Accrual</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Accrued -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Accrued">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsAccuerd"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Accrued"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Accrual"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Advanced"/>
+        <ace_lexicon:CN_pl>Accrueds</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Accrued</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Accrued_Expenses -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Accrued_Expenses">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Expenses"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsContainedBY"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Credit_Side"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsTypeOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Payments"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Balance_Nature"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Credit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Payment"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Not_Happened"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Balance_Nature"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Credit"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsAccuerd"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Accrued"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsContainedBY"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Credit_Side"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsTypeOf"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Payments"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Payment"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Not_Happened"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsAccuerd"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Accrued"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Paid_Expenses"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Prepaid_Expenses"/>
+        <ace_lexicon:CN_pl>AccruedExpenseses</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>AccruedExpenses</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Accrued_Revenue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Accrued_Revenue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Revenues"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Balance_Nature"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Debit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsContainedBY"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Debit_Side"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Balance_Nature"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Debit"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Collect"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Not_Happened"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsAccuerd"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Accrued"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsContainedBY"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Debit_Side"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsTypeOf"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Collections"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Collect"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Not_Happened"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsAccuerd"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Accrued"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsTypeOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Collections"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Earned_Revenue"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Unearned_Revenue"/>
+        <ace_lexicon:CN_sg>AccruedRevenue</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>AccruedRevenues</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Advanced -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Advanced">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsAccuerd"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Advanced"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Accrual"/>
+        <ace_lexicon:CN_sg>Advanced</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Advanceds</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Assets -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Assets">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Accounts"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Balance_Nature"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Debit"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsContainedBY"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Debit_Side"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Balance_Nature"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Debit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsContainedBY"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Debit_Side"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Expenses"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Liabilities"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Owners_Equity"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Revenues"/>
+        <ace_lexicon:CN_pl>Assetses</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Assets</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Balance_Sheet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Balance_Sheet">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsContainedBY"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Credit_Side"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsContainedBY"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Debit_Side"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Financial_Statements"/>
+        <ace_lexicon:CN_pl>BalanceSheets</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>BalanceSheet</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Collections -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Collections">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsTypeOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Collections"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Income_Statement"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Payments"/>
+        <ace_lexicon:CN_sg>Collections</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Collectionses</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Credit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Credit">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Balance_Nature"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Credit"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Nature"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Debit"/>
+        <ace_lexicon:CN_pl>Credits</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Credit</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Credit2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Credit2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Nature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Credit_Side -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Credit_Side">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsContainedBY"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Credit_Side"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Balance_Sheet"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Debit_Side"/>
+        <ace_lexicon:CN_pl>CreditSides</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>CreditSide</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Current_Assets -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Current_Assets">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Assets"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Long_Term_Assets"/>
+        <ace_lexicon:CN_pl>CurrentAssetses</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>CurrentAssets</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Current_Liabilities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Current_Liabilities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Liabilities"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Long_Term_Liabilities"/>
+        <ace_lexicon:CN_pl>CurrentLiabilitieses</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>CurrentLiabilities</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Debit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Debit">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Balance_Nature"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Debit"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Nature"/>
+        <ace_lexicon:CN_sg>Debit</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Debits</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Debit2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Debit2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Nature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Debit_Side -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Debit_Side">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsContainedBY"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Debit_Side"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Balance_Sheet"/>
+        <ace_lexicon:CN_sg>DebitSide</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>DebitSides</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Done -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Done">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Collect"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Done"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Payment"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Done"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Payment_Collection"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Not_Happened"/>
+        <ace_lexicon:CN_sg>Done</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Dones</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Done2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Done2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Payment_Collection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Earned_Revenue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Earned_Revenue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Revenues"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Balance_Nature"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Credit"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Collect"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Done"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsAccuerd"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Accrued"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsTypeOf"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Collections"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Balance_Nature"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Credit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Collect"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Done"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsTypeOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Collections"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsAccuerd"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Accrued"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Unearned_Revenue"/>
+        <ace_lexicon:CN_pl>EarnedRevenues</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>EarnedRevenue</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Expenses -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Expenses">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Accounts"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Liabilities"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Owners_Equity"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Revenues"/>
+        <ace_lexicon:CN_sg>Expenses</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Expenseses</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Financial_Accounting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Financial_Accounting"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Financial_Statements -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Financial_Statements">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Financial_Accounting"/>
+        <ace_lexicon:CN_pl>FinancialStatementses</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>FinancialStatements</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Income_Statement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Income_Statement">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsTypeOf"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Collections"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsTypeOf"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Payments"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Financial_Statements"/>
+        <ace_lexicon:CN_pl>IncomeStatements</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>IncomeStatement</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Liabilities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Liabilities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Accounts"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsContainedBY"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Credit_Side"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Balance_Nature"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Debit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Owners_Equity"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Revenues"/>
+        <ace_lexicon:CN_pl>Liabilitieses</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Liabilities</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Long_Term_Assets -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Long_Term_Assets">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Assets"/>
+        <ace_lexicon:CN_sg>LongTermAssets</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>LongTermAssetses</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Long_Term_Liabilities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Long_Term_Liabilities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Liabilities"/>
+        <ace_lexicon:CN_sg>LongTermLiabilities</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>LongTermLiabilitieses</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Nature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Nature">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Credit"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Debit"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Financial_Accounting"/>
+        <ace_lexicon:CN_pl>Natures</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Nature</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Not_Happened -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Not_Happened">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Collect"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Not_Happened"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Payment"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Not_Happened"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Payment_Collection"/>
+        <ace_lexicon:CN_sg>NotHappened</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>NotHappeneds</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Not_Happened2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Not_Happened2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Payment_Collection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Owners_Equity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Owners_Equity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Accounts"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsContainedBY"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Credit_Side"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Revenues"/>
+        <ace_lexicon:CN_pl>OwnersEquities</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>OwnersEquity</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Paid_Expenses -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Paid_Expenses">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Expenses"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Balance_Nature"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Debit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Balance_Nature"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Debit"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsAccuerd"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Accrued"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsTypeOf"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Payments"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Payment"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Done"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsTypeOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Payments"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Payment"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Done"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsAccuerd"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Accrued"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <ace_lexicon:CN_sg>PaidExpenses</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>PaidExpenseses</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Payment_Collection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Payment_Collection">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Done"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Not_Happened"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Financial_Accounting"/>
+        <ace_lexicon:CN_sg>PaymentCollection</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>PaymentCollections</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Payments -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Payments">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsTypeOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Payments"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Income_Statement"/>
+        <ace_lexicon:CN_sg>Payments</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Paymentses</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Prepaid_Expenses -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Prepaid_Expenses">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Expenses"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsAccuerd"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Advanced"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Balance_Nature"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Debit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsContainedBY"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Debit_Side"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Collect"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Done"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Balance_Nature"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Debit"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Collect"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Done"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsAccuerd"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Advanced"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsContainedBY"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Debit_Side"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <ace_lexicon:CN_sg>PrepaidExpenses</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>PrepaidExpenseses</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Revenues -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Revenues">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Accounts"/>
+        <ace_lexicon:CN_pl>Revenueses</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Revenues</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Unearned_Revenue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Unearned_Revenue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Revenues"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsContainedBY"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Credit_Side"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Balance_Nature"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Credit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsAccuerd"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Advanced"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Balance_Nature"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Credit"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Collect"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Done"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsAccuerd"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Advanced"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#IsContainedBY"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Credit_Side"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Collect"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eman/ontologies/2014/11/EnglishFinancialAccounting#Done"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <ace_lexicon:CN_pl>UnearnedRevenues</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>UnearnedRevenue</ace_lexicon:CN_sg>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
