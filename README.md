@@ -110,13 +110,13 @@ Published in the *IEEE Seventh International Conference on Intelligent Computing
 
 [View publication](https://ieeexplore.ieee.org/document/7397228)
 
-### Comparing Ontology-Based and Item Response Theory in Computer Adaptive Testing
+### Comparing Ontology-Based and Item Response Theory in Computer Adaptive Test
 
 **Eman Khater, A. Hegazy, and M. E. Shehab**
 
 Published in the *IEEE Seventh International Conference on Intelligent Computing and Information Systems, ICICIS 2015*.
 
-The official publication link will be added after confirming the exact IEEE record.
+[View publication](https://ieeexplore.ieee.org/document/7397220)
 
 ## Relationship Among the Publications
 
